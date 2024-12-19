@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #393e46;
+  font-family: cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 8rem;
+  color: #4ecca3;
+  margin-bottom: 50px;
+}
+
+.dice-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice p {
+  font-size: 2rem;
+  color: #4ecca3;
+  margin-bottom: 15px;
+}
+
+.dice img {
+  width: 70%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  background-color: #4ecca3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #3d9d81;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+
+  .dice-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dice p {
+    font-size: 1.6rem;
+  }
+
+  .dice img {
+    width: 60%;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 15px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+    margin: 15px;
+  }
+
+  .dice p {
+    font-size: 1.5rem;
+  }
+
+  .dice img {
+    width: 50%;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+}
